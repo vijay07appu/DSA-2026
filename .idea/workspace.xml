@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc1ea2b3-94de-47c4-829a-5e68299f3b96" name="Changes" comment="" />
+    <list default="true" id="bc1ea2b3-94de-47c4-829a-5e68299f3b96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Arrays/first.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSA2026/Recursion/Practice.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +35,7 @@
     &quot;Application.Pattern.executor&quot;: &quot;Run&quot;,
     &quot;Application.Practice.executor&quot;: &quot;Run&quot;,
     &quot;Application.first.executor&quot;: &quot;Run&quot;,
+    &quot;Application.print.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
