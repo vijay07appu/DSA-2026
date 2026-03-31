@@ -1,35 +1,70 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class first {
     public static void main(String[] args) {
-        int[] arr={7, 7, 2, 2, 10, 10,8, 10};
-        System.out.println(secondLargestElement(arr));
+        int[] arr={2,1,3,4};
+        System.out.println(check(arr));
 
     }
-    public static int secondLargestElement(int[] nums) {
-        int max=Integer.MIN_VALUE;
-        int second=Integer.MIN_VALUE;
-        for(int i=0;i<nums.length;i++)
+
+    public static boolean check(int[] nums) {
+        int n=nums.length;
+        if(n<=1)
         {
-
-            if(nums[i]>max)
+            return true;
+        }
+        if(isSorted(nums))
+        {
+            return true;
+        }
+        int count=0;
+        for(int i=0;i<nums.length-1;i++)
+        {
+            if(nums[i]>nums[i+1])
             {
-                second=max;
-                max=nums[i];
+                count=n-i-1;
+                break;
             }
-            else if(nums[i]!=max && nums[i]>second)
-            {
-                second=nums[i];
+        }
 
+        int[] b=new int[nums.length];
+
+        for(int i=0;i<b.length;i++)
+        {
+            b[i]=nums[(i+count+1)%n];
+        }
+        System.out.println(Arrays.toString(b));
+        if(isSorted(b))
+        {
+            return true;
+        }
+        return false;
+
+
+
+    }
+
+    public static boolean isSorted(int[] nums)
+    {
+        boolean isSorted=true;
+        for(int i=1;i<nums.length;i++)
+        {
+            if(nums[i]<nums[i-1])
+            {
+                isSorted=false;
             }
 
         }
-        if(second==Integer.MIN_VALUE)
+        if(isSorted)
         {
-            return -1;
+            return true;
         }
-        return second;
+        return false;
     }
+
+
 
 
 
